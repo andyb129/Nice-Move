@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="uk.co.barbuzz"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    <!--  <uses-sdk android:minSdkVersion="7" />  -->
+      
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <application android:icon="@drawable/icon" 
+	    android:label="@string/app_name" 
+	    android:theme="@style/NMTheme"
+	    android:name="NMApplication">
+    	
+    	<uses-library android:name="com.google.android.maps" />
+    	
+        <activity android:name=".SplashScreen" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".MessageList" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.MessageList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
+        </activity>
+        
+        <activity android:name=".MessageDetail" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.MessageDetail" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
+        </activity>
+        
+        <activity android:name=".GoogleMap">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.GoogleMap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Search">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.Search" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".PictureCapture">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.PictureCapture" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".HouseTabs">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.HouseTabs" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".HouseDetails">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.HouseDetails" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".HouseNotes">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.HouseNotes" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".HousePhotos">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.HousePhotos" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".HouseRating">
+            <intent-filter>
+                <action android:name="uk.co.barbuzz.HouseRating" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>       
+    
+</manifest>

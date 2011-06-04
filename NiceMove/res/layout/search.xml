@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#ec5f01">
+	<TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/roundedrectangle"
+		android:layout_margin="16dip"
+		android:padding="15dip">
+		<TableRow>			
+			<TextView  
+			    android:id="@+id/TextViewTitle"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:text="@string/searchtitle"  
+			    android:textSize="20dp"
+			    android:textColor="@color/defaulttextcolour"
+			    android:layout_centerHorizontal="true"
+			    android:paddingBottom="10dip">  
+			</TextView>
+		</TableRow>
+		
+		<TableRow> 
+			<TextView  
+			    android:id="@+id/TextViewLocation"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:text="@string/locationlabel"  
+			    android:textSize="12dp"
+			    android:textColor="@color/defaulttextcolour">  
+			  </TextView>
+		</TableRow>		
+		<TableRow>
+			  <!-- <EditText  
+			    android:id="@+id/EditTextLocation"  
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"  
+			    android:hint="@string/locationhint"  
+			    android:inputType="text"
+			    android:textSize="5dp"> 
+			    </EditText> 
+			    -->
+			   <Spinner 
+		        android:id="@+id/SpinnerLocation"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:prompt="@string/location_prompt"
+	    		/>			   			   
+		</TableRow>
+		
+		<TableRow> 
+			<TextView  
+			    android:id="@+id/TextViewPropertyType"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:text="@string/propertytypelabel"  
+			    android:textSize="12dp"
+			    android:textColor="@color/defaulttextcolour">  
+			  </TextView>
+		</TableRow>		
+		<TableRow>
+			<Spinner 
+		        android:id="@+id/SpinnerPropertyType"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:prompt="@string/propertytype_prompt"
+	    	/>		
+		</TableRow>
+		
+		<TableRow> 
+			<TextView  
+			    android:id="@+id/TextViewRadius"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:text="@string/radiuslabel"  
+			    android:textSize="12dp"
+			    android:textColor="@color/defaulttextcolour">  
+			  </TextView>
+		</TableRow>		
+		<TableRow>
+			<Spinner 
+		        android:id="@+id/SpinnerRadius"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:prompt="@string/radius_prompt"
+	    	/>		
+		</TableRow>
+		
+		<TableRow> 
+			<TextView  
+			    android:id="@+id/TextViewMaxPrice"  
+			    android:layout_width="fill_parent"  
+			    android:layout_height="wrap_content"  
+			    android:text="@string/maxpricelabel"  
+			    android:textSize="12dp"
+			    android:textColor="@color/defaulttextcolour">  
+			  </TextView>
+		</TableRow>		
+		<TableRow>
+			  <Spinner 
+		        android:id="@+id/SpinnerMaxPrice"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:prompt="@string/maxprice_prompt"
+		        android:textSize="10dp"/>
+		</TableRow>
+		
+		<TableRow android:paddingTop="10dip"> 
+			<RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="#ffffff">
+				<Button  
+				    android:id="@+id/ButtonSearch"  
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"  
+				    android:text="@string/searchbutton"  
+				    android:textSize="15dp"
+				    android:onClick="searchData">  
+				</Button>
+				<Button  
+				    android:id="@+id/ButtonShowMap"
+				    android:layout_width="wrap_content"  
+				    android:layout_height="wrap_content"  
+				    android:text="@string/showmapbutton" 
+				    android:textSize="15dp" 
+				    android:onClick="showMap"				 
+				    android:layout_toRightOf="@id/ButtonSearch">  
+				</Button>	
+				<Button  
+				    android:id="@+id/ButtonTakePic"
+				    android:layout_width="wrap_content"  
+				    android:layout_height="wrap_content"  
+				    android:text="@string/takepicbutton"
+				    android:textSize="15dp"  
+				    android:onClick="takePic"				 
+				    android:layout_toRightOf="@id/ButtonShowMap">  
+				</Button>			
+			</RelativeLayout>			
+		</TableRow>
+		
+	</TableLayout>
+	
+	<ImageView android:src="@drawable/rowofhouses"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"               
+                android:background="#ffffff" />
+	
+</LinearLayout>

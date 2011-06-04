@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout android:id="@+id/header"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:background="@color/splashbackcolour">                
+        
+	<ImageView android:src="@drawable/nicemovelogotext"
+                android:layout_width="wrap_content" 
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" />       
+ 
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- debug API key-->   	   	
+   	<!-- <string name="mapAPIKey">0AdrR4jkccV5pDZLExU8vbM8n_kzYh2nyQ1uK7Q</string>-->   	   	
+   	  
+   	<!-- publish API key-->   	
+   	<string name="mapAPIKey">0AdrR4jkccV6TBJCKq20NJi6umiL3ugEj05AIPw</string>
+	
+	
+	<string name="app_name">Nice Move</string>
+    
+    <string name="searchtitle">Search Criteria</string>
+    
+    <string name="titletextsize">15dp</string>
+    <string name="elementtextsize">7dp</string>    
+        
+    <string name="locationlabel">Location</string>
+   	<!--  <string name="locationhint">Search Location</string> -->
+   	
+   	<string name="location_prompt">Choose a location</string>   	
+    <string-array name="location_array">
+    	<item>Bradley Stoke, Bristol</item>        
+    	<item>Clifton, Bristol</item> 
+    	<item>Kingswood, Bristol</item>
+    	<item>Longwell Green, Bristol</item>
+    	<item>Southville, Bristol</item>
+    	<item>Whitchurch, Bristol</item>                                        
+    </string-array>   
+   	
+   	<string name="propertytypelabel">Property Type</string>
+   	
+   	<string name="propertytype_prompt">Choose a property type</string>   	
+    <string-array name="propertytype_array">
+    	<item>Any</item>
+        <item>Houses</item>
+        <item>Flats</item>
+        <item>Bungalows</item>
+        <item>Land</item>
+        <item>Commercial</item>        
+    </string-array>   
+   	
+   	<string name="radiuslabel">Radius</string>  
+   	
+   	<string name="radius_prompt">Choose a radius</string>   	
+    <string-array name="radius_array">
+    	<item>This area only</item>
+        <item>Within 1/4 mile</item>
+        <item>Within 1/2 mile</item>
+        <item>Within 1 mile</item>
+        <item>Within 3 miles</item>
+        <item>Within 5 miles</item>
+        <item>Within 10 miles</item>
+        <item>Within 15 miles</item>
+        <item>Within 20 miles</item>
+        <item>Within 30 miles</item>
+        <item>Within 40 miles</item>
+    </string-array>   	 
+   	
+   	<string name="maxpricelabel">Max Price</string>
+   	
+   	<string name="maxprice_prompt">Choose a max price</string>
+    <string-array name="maxprice_array">
+    	<item>No max</item>
+        <item>50,000</item>
+        <item>60,000</item>
+        <item>70,000</item>
+        <item>80,000</item>
+        <item>90,000</item>
+        <item>100,000</item>
+        <item>110,000</item>
+        <item>120,000</item>
+        <item>130,000</item>
+        <item>140,000</item>
+        <item>150,000</item>
+        <item>160,000</item>
+        <item>170,000</item>
+        <item>180,000</item>
+        <item>190,000</item>
+        <item>200,000</item>
+        <item>210,000</item>
+        <item>220,000</item>
+        <item>230,000</item>
+        <item>240,000</item>
+        <item>250,000</item>
+        <item>260,000</item>
+        <item>270,000</item>
+        <item>280,000</item>
+        <item>290,000</item>
+        <item>300,000</item>
+        <item>325,000</item>
+        <item>350,000</item>
+        <item>400,000</item>
+        <item>425,000</item>
+        <item>450,000</item>
+        <item>500,000</item>
+        <item>525,000</item>
+        <item>550,000</item>
+        <item>600,000</item>
+        <item>650,000</item>
+        <item>700,000</item>
+        <item>800,000</item>
+        <item>900,000</item>        
+        <item>1,500,000</item>
+        <item>2,000,000</item>
+        <item>3,000,000</item>
+        <item>No max</item>
+    </string-array>
+   	
+   	   	
+   	<string name="searchbutton">Search</string>
+   	<string name="showmapbutton">Show Map</string>
+   	<string name="takepicbutton">Take Pic</string>
+   	   	
+   	<string name="textviewdesclabel">Description: </string>
+   	<string name="textviewdatelabel">Published Date: </string>
+   	
+   	<string name="viewwebpagebutton">View on RightMove</string>   	
+   	<string name="showlistbutton">Show as list</string>
+   	   	   	    
+   	<color name="splashbackcolour">#ffffff</color>
+   	<color name="activitybackground">#ffffff</color>
+   	<color name="defaulttextcolour">#000000</color>
+   	<color name="listtextcolour">#ec5f01</color>
+</resources>

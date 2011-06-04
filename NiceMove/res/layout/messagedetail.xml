@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/activitybackground">
+  
+    <ImageView android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:src="@drawable/icon" 
+    android:id="@+id/ImageViewHouse"
+    android:paddingBottom="20dip"
+    android:paddingTop="20dip"></ImageView>
+    
+    <TextView android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/ImageViewHouse" 
+    android:id="@+id/TextViewTitle" 
+    android:padding="10dip"
+    android:textColor="@color/defaulttextcolour"></TextView>
+    
+    <TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/TextViewTitle" 
+    android:id="@+id/TextViewDescLabel" 
+    android:textColor="@color/defaulttextcolour"
+    android:text="@string/textviewdesclabel"
+    android:padding="10dip"
+    android:textStyle="bold"></TextView>
+    <TextView android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/TextViewDescLabel" 
+    android:id="@+id/TextViewDesc" 
+    android:padding="10dip"
+    android:textColor="@color/defaulttextcolour"></TextView>
+    
+    <TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/TextViewDesc" 
+    android:id="@+id/TextViewDateLabel" 
+    android:textColor="@color/defaulttextcolour"
+    android:text="@string/textviewdatelabel"
+    android:padding="10dip"
+    android:textStyle="bold"></TextView>
+    <TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/TextViewDateLabel" 
+    android:id="@+id/TextViewPubDate" 
+    android:padding="10dip"
+    android:textColor="@color/defaulttextcolour"></TextView>
+  
+	<Button  
+	    android:id="@+id/ButtonViewWebPage"  
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	    android:text="@string/viewwebpagebutton"  
+	    android:onClick="viewWebPage"
+	    android:layout_below="@+id/TextViewPubDate" >  
+	</Button>
+  
+</RelativeLayout>
